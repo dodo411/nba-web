@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
-import logo from '../assets/images/nba-logoman-word-white.svg'
-import '../styles/App.css';
+import '../styles/App.css'
+import { Main } from './Main.js';
+import { TopNavBar } from './TopNavBar';
+
 
 class App extends Component {
   render() {
-    return (
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-        </header>
-    );
+      return (
+          <div className="App">
+              <TopNavBar/>
+              <Main/>
+          </div>
+      );
   }
 }
 

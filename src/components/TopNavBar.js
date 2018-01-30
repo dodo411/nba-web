@@ -1,15 +1,13 @@
 import React from 'react';
-import { TopNavBar } from './TopNavBar'
-import '../styles/App.css'
+import logo from '../assets/images/nba-logoman-word-white.svg'
 
 
 export class TopNavBar extends React.Component {
-
     render() {
         return (
-            <div className="App">
-                <TopNavBar/>
-            </div>
+            <header className="App-header">
+                <img src={logo} className="App-logo" alt="logo" />
+            </header>
         );
     }
 }
